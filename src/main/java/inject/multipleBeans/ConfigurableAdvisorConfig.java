@@ -1,4 +1,4 @@
-package com.jd.brick;
+package inject.multipleBeans;
 
 import org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor;
 import org.springframework.context.annotation.Bean;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConfigurableAdvisorConfig {
-    private String pointcut = "execution(* com.jd.brick.service.OrderService.*(..))";
+    private String pointcut = "execution(* inject.multipleBeans.service.OrderService.*(..))";
     
     @Bean
     public AspectJExpressionPointcutAdvisor configurabledvisorBefore() {
