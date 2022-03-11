@@ -7,4 +7,4 @@ inject-multipleBeans
 
 
 Notice:
-1. AspectJExpressionPointcutAdvisor is not used in inject.multipleBeans.service.OrderService, which is the only business service bean.
+1. AspectJExpressionPointcutAdvisor is not used in inject.multipleBeans.OrderService, which is the only business service bean.

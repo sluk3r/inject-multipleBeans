@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @Slf4j
 public class ConfigurableAdvisorConfig {
-    private String pointcut = "execution(* inject.multipleBeans.service.OrderService.*(..))";
+    private String pointcut = "execution(* inject.multipleBeans.OrderService.*(..))";
     
     @Bean
     public AspectJExpressionPointcutAdvisor configurabledvisorBefore() {
